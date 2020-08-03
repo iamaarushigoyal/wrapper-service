@@ -34,6 +34,7 @@ router.get('/cases', async (ctx, next) => {
 
 app.use(router.routes());
 app.use(cors());
-app.listen(8001);
+const port = process.env.PORT || 8001
+app.listen(port);
 
 export default app;
